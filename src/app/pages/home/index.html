@@ -5,46 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog de Viagem</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-[#ADD8E6]">
-  <header>
-    <h1 class="font-bold text-6xl">Blog de Viagem!</h1>
-    <div id="container-imagens" class="flex flex-wrap justify-between px-4 pt-10">
-      <div>
-        <p><strong>Destinos de Praia</strong></p>
-        <a href="../Destinos de Praia/index.html">
-          <img src="/public/Destinos de Praia.png" class="w-60 h-60 object-cover">
-        </a>
-      </div>
-      <div>
-        <p><strong>Destinos de Praia</strong></p>
-        <a href="../Dicas de Mochilão/index.html">
-          <img src="/public/Dicas de Mochilao.png" class="w-60 h-60 object-cover">
-        </a>
-      </div>
-      <div>
-        <p><strong>Destinos de Praia</strong></p>
-        <a href="../Melhores Hoteis/index.html">
-          <img src="/public/Melhores Hoteis.png" class="w-60 h-60 object-cover">
-        </a>
-      </div>
-    </div>
+<body class="bg-blue-400">
+  <header class="text-center">
+    <h1 class="font-bold text-6xl text-center py-6">Blog de Viagem!</h1>
+    <article class="bg-[#0b366b] text-white border-2 inline-block text-center object-fit mx-auto p-4">
+      <p>Este blog de viagem foi criado para compartilhar minhas experiências e dicas sobre diversos destinos ao redor do mundo.</p>
+      <p>Aqui, você encontrará informações sobre as melhores praias, sugestões de roteiros para mochileiros e recomendações de hotéis para todos os gostos e orçamentos.</p>
+      <p>O objetivo é proporcionar aos leitores um conteúdo rico e útil para planejar viagens inesquecíveis, seja para quem busca relaxar, explorar ou se aventurar por novos lugares.</p>
+    </article>
   </header>
-  <main class="mt-6 px-4 border-black border-t-2">
-    <h2 class="font-bold italic">Resumo Breve do Blog</h2>
-    <p>Bem-vindo ao nosso Blog de Viagem! Aqui, você encontrará dicas, sugestões e inspirações para tornar sua próxima viagem inesquecível. Explore nossas páginas exclusivas e descubra:</p>
-    <ul>
-      <li><strong>Destinos de Praia:</strong> Descubra as melhores praias para relaxar, praticar esportes aquáticos ou aproveitar o sol.</li>
-      <li><strong>Dicas de Mochilão:</strong> Orientações práticas e econômicas para quem deseja explorar novos destinos de forma descomplicada.</li>
-      <li><strong>Melhores Hotéis:</strong> Conheça nossas recomendações de hospedagem para todos os gostos e orçamentos.</li>
-      <li><strong>Contatos:</strong> Entre em contato conosco para tirar dúvidas, enviar sugestões ou compartilhar suas experiências de viagem.</li>
-    </ul>
-    <p>Navegue pelo nosso site e inspire-se para sua próxima aventura!</p>
-
+  <main class="mt-6 pt-2 pb-6 flex flex-col ">
+    <div class="image-container relative bg-cover bg-center cursor-pointer" style="background-image: url('/public/Destinos de Praia.png');">
+      <div class="overlay absolute inset-0 flex items-center justify-center">
+        <p><strong>Destinos de Praia:</strong> Descubra as melhores praias para relaxar, praticar esportes aquáticos ou aproveitar o sol.</p>
+      </div>
+      <a href="../Destinos de Praia/index.html" class="absolute inset-0"></a>
+    </div>
+    <div class="image-container relative bg-cover bg-center cursor-pointer" style="background-image: url('/public/Dicas de Mochilao.png');">
+      <div class="overlay absolute inset-0 flex items-center justify-center">
+        <p><strong>Dicas de Mochilão:</strong> Orientações práticas e econômicas para quem deseja explorar novos destinos de forma descomplicada.</p>
+      </div>
+      <a href="../Dicas de Mochilão/index.html" class="absolute inset-0"></a>
+    </div>
+    <div class="image-container relative bg-cover bg-center cursor-pointer" style="background-image: url('/public/Melhores Hoteis.png');">
+      <div class="overlay absolute inset-0 flex items-center justify-center">
+        <p><strong>Melhores Hotéis:</strong> Conheça nossas recomendações de hospedagem para todos os gostos e orçamentos.</p>
+      </div>
+      <a href="../Melhores Hoteis/index.html" class="absolute inset-0"></a>
+    </div>
   </main>
-  
   <footer class="px-4">
-    <p class="text-xs">Este site foi desenvolvido como parte de um trabalho acadêmico para a faculdade. Ele tem como objetivo demonstrar habilidades em desenvolvimento web, incluindo estruturação de conteúdo, navegação entre páginas e design responsivo.</p>
+    <p class="text-xs text-center">Este site foi desenvolvido como parte de um trabalho acadêmico para a faculdade. Ele tem como objetivo demonstrar habilidades em desenvolvimento web, incluindo estruturação de conteúdo, navegação entre páginas e design responsivo.</p>
+    <p class="text-xs text-center mt-2"><strong>Arthur Fernandes</strong> - UVV - 2024</p>
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>
