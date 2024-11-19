@@ -36,18 +36,12 @@ const darVidaAsImagens = () => {
     });
 
     container.addEventListener('mouseenter', () => {
-      // Desaparecer o texto
       textoImagem.style.opacity = '0';
-      
-      // Mostrar a sobreposição
       overlay.classList.add('visible');
     });
   
     container.addEventListener('mouseleave', () => {
-      // Reaparecer o texto
       textoImagem.style.opacity = '1';
-      
-      // Esconder a sobreposição
       overlay.classList.remove('visible');
     });  
   });
