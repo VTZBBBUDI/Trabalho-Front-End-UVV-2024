@@ -46,3 +46,7 @@
 .image-container:not(:hover) {
   transition: transform 0.3s ease, z-index 0.3s ease;
 }
+
+button {
+  z-index: 2;
+}

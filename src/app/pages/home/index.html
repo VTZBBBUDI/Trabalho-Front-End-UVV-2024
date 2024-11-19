@@ -9,34 +9,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-blue-400">
+<body class="bg-[#ffe56d]">
   <header class="text-center">
     <h1 class="font-bold text-6xl text-center py-6">Blog de Viagem!</h1>
     <article class="bg-[#0b366b] text-white border-2 inline-block text-center object-fit mx-auto p-4">
-      <p>Este blog de viagem foi criado para compartilhar minhas experiências e dicas sobre diversos destinos ao redor do mundo.</p>
+      <p>Este blog de viagem foi criado para compartilhar dicas sobre diversos destinos ao redor do mundo.</p>
       <p>Aqui, você encontrará informações sobre as melhores praias, sugestões de roteiros para mochileiros e recomendações de hotéis para todos os gostos e orçamentos.</p>
       <p>O objetivo é proporcionar aos leitores um conteúdo rico e útil para planejar viagens inesquecíveis, seja para quem busca relaxar, explorar ou se aventurar por novos lugares.</p>
     </article>
   </header>
   <main class="mt-6 pt-2 pb-6 flex flex-col ">
-    <div class="image-container relative bg-cover bg-center cursor-pointer" style="background-image: url('/public/Destinos de Praia.png');">
+    <div class="image-container relative bg-cover bg-center cursor-pointer" title="Destinos de Praia" data-link="../Destinos de Praia/index.html" style="background-image: url('/public/Destinos de Praia.png');">
       <div class="overlay absolute inset-0 flex items-center justify-center">
         <p><strong>Destinos de Praia:</strong> Descubra as melhores praias para relaxar, praticar esportes aquáticos ou aproveitar o sol.</p>
       </div>
-      <a href="../Destinos de Praia/index.html" class="absolute inset-0"></a>
     </div>
-    <div class="image-container relative bg-cover bg-center cursor-pointer" style="background-image: url('/public/Dicas de Mochilao.png');">
+    <div class="image-container relative bg-cover bg-center cursor-pointer" title="Dicas de Mochilão" data-link="../Dicas de Mochilao/index.html" style="background-image: url('/public/Dicas de Mochilao.png');">
       <div class="overlay absolute inset-0 flex items-center justify-center">
         <p><strong>Dicas de Mochilão:</strong> Orientações práticas e econômicas para quem deseja explorar novos destinos de forma descomplicada.</p>
       </div>
-      <a href="../Dicas de Mochilão/index.html" class="absolute inset-0"></a>
     </div>
-    <div class="image-container relative bg-cover bg-center cursor-pointer" style="background-image: url('/public/Melhores Hoteis.png');">
+    <div class="image-container relative bg-cover bg-center cursor-pointer" title="Melhores Hotéis" data-link="../Melhores Hoteis/index.html" style="background-image: url('/public/Melhores Hoteis.png');">
       <div class="overlay absolute inset-0 flex items-center justify-center">
         <p><strong>Melhores Hotéis:</strong> Conheça nossas recomendações de hospedagem para todos os gostos e orçamentos.</p>
       </div>
-      <a href="../Melhores Hoteis/index.html" class="absolute inset-0"></a>
     </div>
+      <button id="cttBtn" data-link="../Contato/index.html" class="mt-4 text-center inline-block object-fit mx-auto px-4 py-2 bg-[#0b366b] border text-white">Entre Em contato</button>
   </main>
   <footer class="px-4">
     <p class="text-xs text-center">Este site foi desenvolvido como parte de um trabalho acadêmico para a faculdade. Ele tem como objetivo demonstrar habilidades em desenvolvimento web, incluindo estruturação de conteúdo, navegação entre páginas e design responsivo.</p>
