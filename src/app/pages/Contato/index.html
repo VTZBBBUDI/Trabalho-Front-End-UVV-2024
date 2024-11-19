@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicas de Mochilão</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#ffe56d]">
+  <header class="text-center">
+    <h1 class="font-bold text-6xl text-center py-6"></h1>
+    <div class="mb-4 flex gap-4 justify-center">
+      <button class="hrefBtn bg-[#0b366b] px-4 py-2 text-white border-2 border-black" data-link="../Home/index.html">Pagina Inicial</button>
+      <button class="hrefBtn bg-[#0b366b] p-2 text-white border-2 border-black" data-link="../Destinos de Praia/index.html">Destinos de Praia</button>
+      <button class="hrefBtn bg-[#0b366b] px-4 py-2 text-white border-2 border-black" data-link="../Melhores Hoteis/index.html">Melhores Hotéis</button>
+      <button class="hrefBtn bg-[#0b366b] p-2 text-white border-2 border-black" data-link="../Dicas de Mochilao/index.html">Dicas de Mochilão</button>
+    </div>
+  </header>
+  <main class="pt-16">
+    <form class="bg-[#0b366b] shadow-md rounded-lg p-6 max-w-lg mx-auto mb-28">
+      <h2 class="text-2xl font-bold text-white mb-4 text-center">Entre em Contato</h2>
+      <div class="mb-4">
+        <label for="nome" class="block text-sm font-semibold text-white mb-2">Nome Completo</label>
+        <input 
+          type="text" 
+          id="nome" 
+          name="nome" 
+          placeholder="Digite seu nome completo"
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-white focus:border-white"
+          required 
+        />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-semibold text-white mb-2">E-mail</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Digite seu e-mail"
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-white focus:border-white"
+          required 
+        />
+      </div>
+      <div class="mb-4">
+        <label for="telefone" class="block text-sm font-semibold text-white mb-2">Telefone</label>
+        <input 
+          type="tel" 
+          id="telefone" 
+          name="telefone" 
+          placeholder="Digite seu telefone"
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-white focus:border-white"
+        />
+      </div>
+      </div>
+      <button 
+        type="submit" 
+        class="w-full bg-[#274e13] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#1f460b] transition-colors">
+        Enviar
+      </button>
+    </form>
+  </main>
+  <footer class="px-4">
+    <p class="text-xs text-center">Este site foi desenvolvido como parte de um trabalho acadêmico para a faculdade. Ele tem como objetivo demonstrar habilidades em desenvolvimento web, incluindo estruturação de conteúdo, navegação entre páginas e design responsivo.</p>
+    <p class="text-xs text-center mt-2"><strong>Arthur Fernandes</strong> - UVV - 2024</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

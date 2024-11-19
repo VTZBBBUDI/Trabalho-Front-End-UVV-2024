@@ -1,0 +1,56 @@
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  overflow: hidden;
+}
+
+.texto-imagem p {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay p {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.image-container:hover {
+  transform: scaleY(1.1) translateY(-10px);
+  z-index: 10;
+}
+
+
+.image-container:nth-child(2):hover {
+  transform: scaleY(1.1) translateY(10px);
+}
+
+.image-container:not(:hover) {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+button {
+  z-index: 2;
+}
